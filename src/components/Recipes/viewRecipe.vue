@@ -5,7 +5,7 @@
                 <div>
                     <h5 class="text-primary mb-3">{{ recipeItem.name }}</h5>
                     <div class="card">
-                        <b-tabs v-if="recipeItem.sizes.length > 0">
+                        <b-tabs>
                             <b-tab v-for="(size, index) in recipeItem.sizes" :key="index" :title="size.name">
                                 <b-card-text class="tab-content">
                                     <h6>ingredients</h6>
